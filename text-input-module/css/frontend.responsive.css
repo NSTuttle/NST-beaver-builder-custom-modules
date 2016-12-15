@@ -1,0 +1,13 @@
+@media only screen and (max-width: 992px) {
+    .input-field .prefix ~ input {
+        width: 86%;
+        width: calc(100% - 3rem);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .input-field .prefix ~ input {
+        width: 80%;
+        width: calc(100% - 3rem);
+    }
+}

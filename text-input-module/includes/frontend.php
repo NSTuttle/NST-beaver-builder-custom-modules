@@ -11,9 +11,11 @@
  */
 
 ?>
-<div class="input-field ">
-    <i class="<?php echo $settings->icon-select;?>"></i>
-    <input id="first_name" class="eval validate input-bar-center" name="First_Name" required type="text">
+<div class="input-field">
+    <?php if($settings->toggle_icon == 'true'){ ?>
+        <i class="prefix <?php echo $settings->icon_select; echo $settings->icon_position;?>"></i>
+    <?php } ?>
+    <input id="first_name" placeholder="<?php echo $settings->placeholder_field; ?>" class="eval validate input-bar-center" name="First_Name" required type="text">
     <label for="first_name"><?php echo $settings->title_field; ?></label>
     <span class="input-bar"></span>
 </div>

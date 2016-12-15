@@ -8,7 +8,7 @@ class TextInputModuleClass extends FLBuilderModule {
         parent::__construct(array(
             'name'            => __( 'Text Input', 'fl-builder' ),
             'description'     => __( 'Simple Text Input Module with custom underline and validation!', 'fl-builder' ),
-            'category'        => __( 'Advanced Modules', 'fl-builder' ),
+            'category'        => __( 'Form Modules', 'fl-builder' ),
             'dir'             => NST_MODULES_DIR . 'text-input-module/',
             'url'             => NST_MODULES_URL . 'text-input-module/',
             'editor_export'   => true, // Defaults to true and can be omitted.
@@ -27,8 +27,12 @@ FLBuilder::register_module( 'TextInputModuleClass', array(
                 'fields'        => array(
                     'title_field'     => array(
                         'type'          => 'text',
-                        'label'         => __( 'Input Title', 'fl-builder' ),
+                        'label'         => __( 'Input Label', 'fl-builder' ),
                     ),
+                    'placeholder_field'     => array(
+                        'type'          => 'text',
+                        'label'         => __( 'Input Placeholder', 'fl-builder' ),
+                                        ),
                     'color_field'    => array(
                         'type'          => 'color',
                         'label'         => __('Line Color', 'fl-builder'),
@@ -45,7 +49,7 @@ FLBuilder::register_module( 'TextInputModuleClass', array(
             'section_2'  => array(
                 'title'         => __( 'Icon', 'fl-builder' ),
                 'fields'        => array(
-                    'toggle_contents'     => array(
+                    'toggle_icon'     => array(
                         'type'          => 'select',
                         'label'         => __('Enable Icon', 'fl-builder'),
                         'default'       => 'false',
