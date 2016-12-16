@@ -14,6 +14,7 @@ function load_nst_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
         require_once 'text-input-module/text-input-module.php';
+        require_once 'nst-link-box-module/nst-link-box-module.php';
     }
 }
 add_action( 'init', 'load_nst_modules' );
