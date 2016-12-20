@@ -3,10 +3,13 @@ Custom modules for use with the WordPress Beaver Builder Plugin.
 
 ## Overview
 This add-on plugin extends Beaver Builder Functionality to include the following modules:
+* Link Box
+    * Container featuring a H3 header and Links' Area
+    * Customize Heading alignment, image, and more
 * Input Field
- * Allows for custom input field with Material Design CSS properties
- * Add an Icon, Label, Placeholder Text and more 
- * Adjust Colors, Sizes, Animations and more
+    * Allows for custom input field with Material Design CSS properties
+    * Add an Icon, Label, Placeholder Text and more 
+    * Adjust Colors, Sizes, Animations and more
 * More Modules in development
 
 ## Use
