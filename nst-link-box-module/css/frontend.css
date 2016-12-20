@@ -1,0 +1,16 @@
+.nst-link-box{
+    min-height: 150px;
+}
+.nst-full-col{
+    width:100%;
+    min-height: 150px;
+}
+.nst-split-col{
+    width:50%;
+    min-height: 150px;
+    float: left;
+}
+.divider-line{
+    margin-top: 0;
+    clear: both;
+}
