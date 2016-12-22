@@ -25,7 +25,7 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
             'general'       => array(
                 'title'         => '',
                 'fields'        => array(
-                    'links'         => array(
+                    'the_links'         => array(
                         'type'          => 'form',
                         'label'         => __('Link', 'fl-builder'),
                         'form'          => 'links_items_form', // ID from registered form below
@@ -61,6 +61,19 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
                             'right'      => array(),
                         )
                     ),
+                    'title_divider_toggle'  => array(
+                        'type'  => 'select',
+                        'label' => __( 'Title Divider','fl-builder'),
+                        'default' => 'true',
+                        'options' => array(
+                            'true' => __('Yes', 'fl-builder'),
+                            'false'     => __('No', 'fl-builder')
+                        ),
+                        'toggle'    => array(
+                            'true'  => array(),
+                            'false' => array(),
+                        )
+                    ),
                     'link_box_img'     => array(
                         'type'          => 'photo',
                         'label'         => __( 'LinkBox Image', 'fl-builder' ),
@@ -74,18 +87,14 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
                     'double_col_toggle'     => array(
                         'type'          => 'select',
                         'label'         => __('Enable 2 Column', 'fl-builder'),
-                        'default'       => 'false',
+                        'default'       => 'true',
                         'options'       => array(
-                            'false'      => __('No', 'fl-builder'),
-                            'true'      => __('Yes', 'fl-builder')
+                            'true'      => __('Yes', 'fl-builder'),
+                            'false'      => __('No', 'fl-builder')
                         ),
                         'toggle'        => array(
-                            'true'      => array(
-                                'fields'        => array('icon_select', 'icon_color')
-                            ),
-                            'false'      => array(
-                                'fields'        => array()
-                            )
+                            'false'      => array(),
+                            'true'      => array()
                         )
                     )
                 )

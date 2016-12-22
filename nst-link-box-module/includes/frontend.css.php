@@ -6,6 +6,7 @@
  * Time: 11:49 AM
  */
 ?>
+
 <?php if($settings->link_box_img_src != '') { ?>
 .fl-node-<?php echo $id; ?> .nst-link-box-img{
     background: url("<?php echo $settings->link_box_img_src?>") center no-repeat;
@@ -18,8 +19,15 @@
 .fl-node-<?php echo $id; ?> .nst-link-box-title{
     text-align: right;
 }
+
 <?php } elseif(($settings->title_align_toggle == 'center')) { ?>
 .fl-node-<?php echo $id; ?> .nst-link-box-title{
     text-align: center;
+}
+<?php } ?>
+
+<?php if($settings->title_divider_toggle == 'false'){ ?>
+.fl-node-<?php echo $id; ?> .nst-link-box-title{
+    padding-bottom: 27px;
 }
 <?php } ?>
