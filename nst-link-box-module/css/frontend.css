@@ -10,7 +10,13 @@
     min-height: 150px;
     float: left;
 }
+.nst-link-box-item{
+    padding-left: 10px;
+}
 .divider-line{
     margin-top: 0;
     clear: both;
+}
+.nst-link-box-title{
+    padding: 0 10px;
 }

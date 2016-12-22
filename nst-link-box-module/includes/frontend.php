@@ -12,7 +12,7 @@
     <?php } ?>
     <hr class="divider-line">
     <?php if($settings->double_col_toggle == 'false'){ ?>
-        <div class="nst-link-box-col1 nst-full-col">
+        <div class="nst-link-box-col1 nst-full-col nst-link-box-img">
         <?php for ( $i = 0; $i < count( $settings->links ); $i++ ) : if ( empty( $settings->links[ $i ] ) ) continue; ?>
             <div class="nst-link-box-item"<?php if ( ! empty( $settings->id ) ) echo ' id="' . sanitize_html_class( $settings->id ) . '-' . $i . '"'; ?>>
                 <a href="<?php echo $settings->links[ $i ]->link_url; ?>"><?php echo $settings->links[ $i ]->link_label; ?><a/>
@@ -27,7 +27,6 @@
                 </div>
             <?php endfor; ?>
         </div>
-    <div class="nst-link-box-col2 nst-split-col nst-link-box-img">
-    </div>
+        <div class="nst-link-box-col2 nst-split-col nst-link-box-img"></div>
     <?php } ?>
 </div>
