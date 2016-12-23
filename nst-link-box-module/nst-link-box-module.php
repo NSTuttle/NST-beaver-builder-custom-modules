@@ -61,6 +61,23 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
                             'right'      => array(),
                         )
                     ),
+                    'heading_elem_type' => array(
+                        'type' =>   'select',
+                        'label' =>  __('Heading Type','fl-builder'),
+                        'default' =>    'h3',
+                        'options' =>    array(
+                            'h2'    => __('h2','fl-builder'),
+                            'h3'    => __('h3','fl-builder'),
+                            'h4'    => __('h4','fl-builder'),
+                            'p'    => __('p','fl-builder'),
+                        ),
+                        'toggle'    => array(
+                            'h2'    => array(),
+                            'h3'    => array(),
+                            'h4'    => array(),
+                            'p'     => array(),
+                        )
+                    ),
                     'title_divider_toggle'  => array(
                         'type'  => 'select',
                         'label' => __( 'Title Divider','fl-builder'),

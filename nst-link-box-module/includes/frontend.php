@@ -12,7 +12,7 @@
 
 <div class="nst-link-box">
     <?php if($settings->title_field != ''){ ?>
-        <h3 class="nst-link-box-title"><?php echo trim($settings->title_field); ?></h3>
+        <<?php echo $settings->heading_elem_type;?> class="nst-link-box-title"><?php echo trim($settings->title_field); ?></<?php echo $settings->heading_elem_type;?>>
     <?php } ?>
 
     <?php if($settings->title_divider_toggle == 'true'){ ?>
