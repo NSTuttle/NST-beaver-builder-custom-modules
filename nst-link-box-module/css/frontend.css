@@ -1,17 +1,21 @@
 .nst-link-box{
     min-height: 150px;
+    height: inherit;
 }
 .nst-full-col{
     width:100%;
-    min-height: 150px;
+    height: inherit;
+    min-height: inherit;
 }
 .nst-split-col{
     width:50%;
-    min-height: 150px;
+    height: inherit;
+    min-height: inherit;
     float: left;
 }
 .nst-link-box-item{
     padding-left: 10px;
+    list-style: none;
 }
 .divider-line{
     margin-top: 0;

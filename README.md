@@ -4,8 +4,10 @@ Custom modules for use with the WordPress Beaver Builder Plugin.
 ## Overview
 This add-on plugin extends Beaver Builder Functionality to include the following modules:
 * Link Box
-    * Container featuring a H3 header and Links' Area
-    * Customize Heading alignment, image, and more
+    * Container featuring a Heading Text and Links' Area
+    * Option to utilize Image and Split Columns
+    * Option to flip 'Links' and 'Image' positions
+    * Customize Heading alignment, column styles, and more
 * Input Field
     * Allows for custom input field with Material Design CSS properties
     * Add an Icon, Label, Placeholder Text and more 

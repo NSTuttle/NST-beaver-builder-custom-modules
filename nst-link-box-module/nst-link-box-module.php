@@ -40,7 +40,7 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
         'title'         => __( 'Settings', 'fl-builder' ),
         'sections'      => array(
             'section_1'  => array(
-                'title'         => __( 'General', 'fl-builder' ),
+                'title'         => __( 'Title', 'fl-builder' ),
                 'fields'        => array(
                     'title_field'     => array(
                         'type'          => 'text',
@@ -73,7 +73,12 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
                             'true'  => array(),
                             'false' => array(),
                         )
-                    ),
+                    )
+                )
+            ),
+            'section_2'  => array(
+                'title'         => __( 'Image', 'fl-builder' ),
+                'fields'        => array(
                     'link_box_img'     => array(
                         'type'          => 'photo',
                         'label'         => __( 'LinkBox Image', 'fl-builder' ),
@@ -81,8 +86,8 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
                     )
                 )
             ),
-            'section_2'  => array(
-                'title'         => __( 'Icon', 'fl-builder' ),
+            'section_3'  => array(
+                'title'         => __( 'Column Style', 'fl-builder' ),
                 'fields'        => array(
                     'double_col_toggle'     => array(
                         'type'          => 'select',
@@ -94,7 +99,22 @@ FLBuilder::register_module( 'LinkBoxModuleClass', array(
                         ),
                         'toggle'        => array(
                             'false'      => array(),
-                            'true'      => array()
+                            'true'      => array(
+                                'fields' => array('flip_col_toggle')
+                            )
+                        )
+                    ),
+                    'flip_col_toggle'   => array(
+                        'type'  => 'select',
+                        'label' => __('Flip Positions','fl-builder'),
+                        'default' => 'false',
+                        'options' => array(
+                            'false' => __('No', 'fl-builder'),
+                            'true' => __('Yes', 'fl-builder')
+                        ),
+                        'toggle' => array(
+                            'false' => array(),
+                            'true' => array()
                         )
                     )
                 )
