@@ -1,0 +1,15 @@
+.nst-dual-button{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+}
+.nst-dual-button-one{
+    background-color: red;
+    padding: 10px 20px;
+}
+.nst-dual-button-two{
+    background-color: green;
+    padding: 10px 20px;
+}
