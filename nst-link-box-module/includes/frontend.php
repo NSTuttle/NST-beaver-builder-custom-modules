@@ -30,7 +30,7 @@
                 <a href="<?php echo $settings->the_links[ $i ]->link_url; ?>"><?php echo $settings->the_links[ $i ]->link_label; ?></a>
             </li>
         <?php endfor; ?>
-        </ul>
+        </ul>;
     </div>
     <?php if($splitLayout && !$flipLayout) { ?>
         <div class="nst-split-col nst-link-box-img"></div>

@@ -7,9 +7,9 @@
  */
 ?>
 
-<?php if($settings->link_box_img_src != '') { ?>
+<?php if($settings->link_box_img2_src != '') { ?>
 .fl-node-<?php echo $id; ?> .nst-link-box-img{
-    background: url("<?php echo $settings->link_box_img_src?>") center no-repeat;
+    background: url("<?php echo $settings->link_box_img2_src?>") center no-repeat;
     background-size: cover;
     overflow: hidden;
 }

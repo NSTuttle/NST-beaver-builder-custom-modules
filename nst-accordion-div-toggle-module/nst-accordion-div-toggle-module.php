@@ -1,16 +1,16 @@
 <?php
 /**
- * @class LinkBoxModule
+ * @class AccordionDivToggle
  */
-class LinkBoxModuleClass extends FLBuilderModule {
+class AccordionDivToggleModuleClass extends FLBuilderModule {
     public function __construct()
     {
         parent::__construct(array(
-            'name'            => __( 'Link Box', 'fl-builder' ),
-            'description'     => __( 'Stylized Link Box w/ Image Options', 'fl-builder' ),
+            'name'            => __( 'Accordion (Div Toggle)', 'fl-builder' ),
+            'description'     => __( 'Toggle Shown and Hidden div elements by ID', 'fl-builder' ),
             'category'        => __( 'Advanced Modules', 'fl-builder' ),
-            'dir'             => NST_MODULES_DIR . 'nst-link-box-module/',
-            'url'             => NST_MODULES_URL . 'nst-link-box-module/',
+            'dir'             => NST_MODULES_DIR . 'nst-accordion-div-toggle-module/',
+            'url'             => NST_MODULES_URL . 'nst-accordion-div-toggle-module/',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => true, // Defaults to false and can be omitted.
@@ -18,9 +18,9 @@ class LinkBoxModuleClass extends FLBuilderModule {
     }
 }
 
-FLBuilder::register_module( 'LinkBoxModuleClass', array(
+FLBuilder::register_module( 'AccordionDivToggleModuleClass', array(
     'links'         => array(
-        'title'         => __('Links', 'fl-builder'),
+        'title'         => __('Link Buttons', 'fl-builder'),
         'sections'      => array(
             'general'       => array(
                 'title'         => '',
@@ -156,6 +156,10 @@ FLBuilder::register_settings_form('links_items_form', array(
                         'link-url'         => array(
                             'type'          => 'link',
                             'label'         => __('Link Text', 'fl-builder')
+                        ),
+                        'link-id'         => array(
+                            'type'          => 'text',
+                            'label'         => __('DIV ID to Link', 'fl-builder')
                         )
                     )
                 )
@@ -163,3 +167,4 @@ FLBuilder::register_settings_form('links_items_form', array(
         )
     )
 ));
+
