@@ -151,15 +151,11 @@ FLBuilder::register_settings_form('links_items_form', array(
                     'fields'        => array(
                         'link_label'         => array(
                             'type'          => 'text',
-                            'label'         => __('Label Text', 'fl-builder')
+                            'label'         => __('Item Text', 'fl-builder')
                         ),
-                        'link-url'         => array(
-                            'type'          => 'link',
-                            'label'         => __('Link Text', 'fl-builder')
-                        ),
-                        'link-id'         => array(
+                        'link_id'         => array(
                             'type'          => 'text',
-                            'label'         => __('DIV ID to Link', 'fl-builder')
+                            'label'         => __('Div ID to Toggle', 'fl-builder')
                         )
                     )
                 )
