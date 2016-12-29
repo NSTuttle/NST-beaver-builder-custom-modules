@@ -20,7 +20,7 @@ class AccordionDivToggleModuleClass extends FLBuilderModule {
 
 FLBuilder::register_module( 'AccordionDivToggleModuleClass', array(
     'links'         => array(
-        'title'         => __('Nav Element', 'fl-builder'),
+        'title'         => __('Nav Elements', 'fl-builder'),
         'sections'      => array(
             'general'       => array(
                 'title'         => '',
@@ -151,11 +151,11 @@ FLBuilder::register_settings_form('links_items_form', array(
                     'fields'        => array(
                         'link_label'         => array(
                             'type'          => 'text',
-                            'label'         => __('Item Text', 'fl-builder')
+                            'label'         => __('Nav Text', 'fl-builder')
                         ),
                         'link_id'         => array(
                             'type'          => 'text',
-                            'label'         => __('Div ID to Toggle', 'fl-builder')
+                            'label'         => __('ID to Show/Hide', 'fl-builder')
                         )
                     )
                 )
