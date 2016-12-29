@@ -3,6 +3,10 @@ Custom modules for use with the WordPress Beaver Builder Plugin.
 
 ## Overview
 This add-on plugin extends Beaver Builder Functionality to include the following modules:
+* Accordion (Div Toggle)
+    * This module allows you to create Nav-style links tied to specific div ID's to hide/show
+    * Add/Remove/Rearrange positions
+    * Nav-style links and the Show/Hide Divs are NOT tied as child-parent. Allows separation on page.
 * Link Box
     * Container featuring a Heading Text and Links' Area
     * Option to utilize Image and Split Columns
