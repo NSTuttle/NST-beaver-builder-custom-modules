@@ -24,7 +24,7 @@ nav>li>a {
 }
 
 .nst-nav-tabs>li>a span {
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .nst-nav-tabs>li.active>a {
@@ -55,13 +55,13 @@ nav>li>a {
     padding: 27px 0px 0px 0px;
 }
 
-.tab-content>.tab-pane {
+/*.tab-content>.tab-pane {
     display: none;
 }
 
 .tab-content>.active {
     display: block;
-}
+}*/
 
 .tab-content.vertical {
     padding: 0px 0px 0px 23px;
@@ -141,4 +141,11 @@ nav>li>a {
     display: block;
     text-align: left;
     padding: 9px 23px 9px 0px;
+}
+
+.tab-content > .fl-col-content > .tab-pane {
+    display: none;
+}
+.tab-content > .fl-col-content > .active {
+    display: block;
 }
